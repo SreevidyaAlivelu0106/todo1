@@ -1,5 +1,5 @@
 import axios from 'axios';
-const apiUrl= "https://secret-castle-57709.herokuapp.com";
+const apiUrl= "https://secret-castle-57709.herokuapp.com/todo";
 
 export function getTasks(){
   return axios.get(apiUrl);
