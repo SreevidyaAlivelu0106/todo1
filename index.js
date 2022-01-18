@@ -13,7 +13,7 @@ const app=express();
 app.use(express.json());
 app.use(cors());
 try{mongoose.connect(
-process.env.MONGO_URI,
+"mongodb+srv://sreevidyadev:Sree1234@cluster0.qy684.mongodb.net/todo-app?retryWrites=true&w=majority",
        {
          useNewUrlParser: true,
          useUnifiedTopology: true,
