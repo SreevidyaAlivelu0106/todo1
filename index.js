@@ -1,7 +1,6 @@
 const dotenv = require("dotenv");
 const mongoose = require('mongoose');
 
-dotenv.config();
 
 const cors=require('cors');
 const express=require('express');
@@ -11,7 +10,7 @@ const app=express();
 //connection();
 app.use(express.json());
 app.use(cors());
-
+require("dotenv").config();
 try{mongoose.connect(
 process.env.MONGO_URI,
        {
