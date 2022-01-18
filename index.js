@@ -10,7 +10,7 @@ app.use(cors());
 
 
 const port=process.env.PORT || 8080;
-app.use("/", tasks);
+app.use("/api/tasks", tasks);
 
 // Accessing the path module
 const path = require("path");
