@@ -5,6 +5,8 @@ module.exports=async()=>{
       useNewUrlParser: true,
       useUnifiedTopology: true
     };
+
+    require("dotenv").config()
     await mongoose.connect(
       process.env.MONGODB_CONNECTION_STRING,
 
