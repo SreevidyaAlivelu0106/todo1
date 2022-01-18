@@ -6,7 +6,7 @@ module.exports=async()=>{
       useUnifiedTopology: true
     };
     await mongoose.connect(
-      "mongodb+srv://sreevidyadev:Sree1234@cluster0.qy684.mongodb.net/db1?retryWrites=true&w=majority",
+      "mongodb+srv://sreevidyadev:Sree1234@cluster0.qy684.mongodb.net/todo-app?retryWrites=true&w=majority",
 
       connectionParams
     );
