@@ -8,9 +8,8 @@ app.use(express.json());
 app.use(cors());
 
 
-
-const port=process.env.PORT || 8080;
 app.use("/api/tasks", tasks);
+
 
 // Accessing the path module
 const path = require("path");
@@ -22,5 +21,8 @@ app.get("*", function (request, response) {
   response.sendFile(path.resolve(__dirname, "./client/build", "index.html"));
 });
 
+
+
+const port=process.env.PORT || 8080;
 
 app.listen(port, () => console.log(`Listening on port ${port}...`));
