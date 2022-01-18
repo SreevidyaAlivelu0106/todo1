@@ -16,4 +16,3 @@ export function updateTask(id, task){
 export function deleteTask(id){
   return axios.delete(apiUrl+"/"+id);
 }
-https://secret-castle-57709.herokuapp.com
